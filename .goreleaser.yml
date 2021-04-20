@@ -37,3 +37,11 @@ checksum:
   name_template: '{{ .ProjectName }}_checksums.txt'
 snapshot:
   name_template: '{{ .ProjectName }}_{{ .Version }}'
+
+# Check https://goreleaser.com/customization/homebrew/
+brews:
+  - homepage: 'https://github.com/opensearch-project/opensearch-cli'
+    description: 'A full-featured command line interface (CLI) for OpenSearch.'
+    folder: Formula
+    tap:
+      name: opensearch-cli
